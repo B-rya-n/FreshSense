@@ -1,0 +1,486 @@
+.lot-management-hero {
+  padding-bottom: 64px;
+}
+
+.lot-management-section {
+  padding-top: 0;
+}
+
+.lot-management-toolbar,
+.lot-registry-heading,
+.lot-form-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+}
+
+.lot-management-toolbar {
+  margin-bottom: 18px;
+  padding: clamp(20px, 3vw, 30px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--white);
+  box-shadow: var(--shadow-soft);
+}
+
+.lot-management-toolbar > div,
+.lot-registry-heading > div,
+.lot-form-heading > div:first-child {
+  display: grid;
+  gap: 5px;
+}
+
+.lot-management-toolbar span,
+.lot-registry-heading > div > span,
+.lot-form-heading > div > span {
+  color: var(--leaf);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.lot-management-toolbar h2,
+.lot-registry-heading h2,
+.lot-form-heading h2 {
+  margin: 0;
+  color: var(--forest);
+}
+
+.lot-management-toolbar p,
+.lot-form-heading p {
+  max-width: 720px;
+  margin: 0;
+  color: var(--muted);
+}
+
+.lot-management-toolbar-actions {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  flex: none;
+}
+
+.lot-management-toolbar .btn-fresh {
+  flex: none;
+}
+
+.lot-management-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.lot-management-stats article {
+  display: grid;
+  gap: 4px;
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--blue);
+  border-radius: var(--radius-sm);
+  background: var(--white);
+}
+
+.lot-management-stats article.stable {
+  border-left-color: var(--leaf);
+}
+
+.lot-management-stats article.attention {
+  border-left-color: var(--amber);
+}
+
+.lot-management-stats article.critical {
+  border-left-color: var(--coral);
+}
+
+.lot-management-stats span {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.lot-management-stats strong {
+  color: var(--forest);
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.lot-management-message {
+  margin: 0 0 18px;
+  padding: 13px 16px;
+  border: 1px solid rgba(49, 201, 133, 0.3);
+  border-radius: var(--radius-sm);
+  color: #11633f;
+  background: rgba(49, 201, 133, 0.12);
+  font-weight: 800;
+}
+
+.lot-registry,
+.lot-form-shell {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--white);
+  box-shadow: var(--shadow-soft);
+}
+
+.lot-registry {
+  margin-bottom: 28px;
+  overflow: hidden;
+}
+
+.lot-registry-heading {
+  padding: 22px 24px;
+  border-bottom: 1px solid var(--line);
+}
+
+.lot-registry-heading label {
+  display: grid;
+  gap: 6px;
+  width: min(390px, 100%);
+}
+
+.lot-registry-heading label span,
+.lot-form-field label {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.lot-registry-heading input,
+.lot-form-field input,
+.lot-form-field select {
+  width: 100%;
+  min-height: var(--control-height);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xs);
+  padding: 0 13px;
+  color: var(--ink);
+  background: var(--surface);
+}
+
+.lot-registry-heading input:focus,
+.lot-form-field input:focus,
+.lot-form-field select:focus {
+  border-color: var(--leaf);
+  outline: 0;
+  box-shadow: 0 0 0 4px rgba(49, 201, 133, 0.13);
+}
+
+.lot-form-field input.is-invalid,
+.lot-form-field select.is-invalid {
+  border-color: var(--coral);
+  background: rgba(243, 111, 86, 0.06);
+}
+
+.lot-registry-table-wrap {
+  overflow-x: auto;
+}
+
+.lot-registry-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 940px;
+}
+
+.lot-registry-table th,
+.lot-registry-table td {
+  padding: 15px 18px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: middle;
+}
+
+.lot-registry-table th {
+  color: var(--muted);
+  background: var(--surface-alt);
+  font-size: var(--font-size-xs);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.lot-registry-table td > strong,
+.lot-registry-table td > span:not(.lot-status) {
+  display: block;
+}
+
+.lot-registry-table td > strong {
+  color: var(--forest);
+}
+
+.lot-registry-table td > span:not(.lot-status),
+.lot-registry-table td > small {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.lot-status {
+  display: inline-flex;
+  margin-bottom: 4px;
+  border-radius: 999px;
+  padding: 5px 9px;
+  color: #14663f;
+  background: #e6f6ed;
+  font-size: var(--font-size-xs);
+  font-weight: 900;
+}
+
+.lot-status.risk-medio,
+.lot-risk-preview.risk-medio {
+  color: #85540a;
+  background: #fff2d9;
+}
+
+.lot-status.risk-alto,
+.lot-risk-preview.risk-alto {
+  color: #a93a2c;
+  background: #fdebe8;
+}
+
+.lot-row-actions {
+  display: flex;
+  gap: 7px;
+}
+
+.lot-row-actions button,
+.lot-row-actions a,
+.lot-delete-dialog button {
+  min-height: var(--control-height);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xs);
+  padding: 0 12px;
+  color: var(--forest);
+  background: transparent;
+  cursor: pointer;
+  font-weight: 800;
+  line-height: 36px;
+  text-decoration: none;
+}
+
+.lot-row-actions button:hover,
+.lot-row-actions a:hover,
+.lot-delete-dialog button:hover {
+  border-color: var(--leaf);
+  background: rgba(49, 201, 133, 0.09);
+}
+
+.lot-row-actions button.danger,
+.lot-delete-dialog button.danger {
+  border-color: rgba(243, 111, 86, 0.35);
+  color: #a93a2c;
+}
+
+.lot-row-actions button.danger:hover,
+.lot-delete-dialog button.danger:hover {
+  border-color: var(--coral);
+  background: rgba(243, 111, 86, 0.11);
+}
+
+.lot-registry-empty {
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  padding: 38px 20px;
+  color: var(--muted);
+}
+
+.lot-registry-empty strong {
+  color: var(--forest);
+}
+
+.lot-form-shell {
+  scroll-margin-top: 96px;
+  padding: clamp(22px, 4vw, 34px);
+}
+
+.lot-form-heading {
+  align-items: start;
+  margin-bottom: 26px;
+}
+
+.lot-risk-preview {
+  display: grid;
+  min-width: 150px;
+  gap: 2px;
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  color: #14663f;
+  background: #e6f6ed;
+}
+
+.lot-risk-preview span {
+  color: inherit;
+  font-size: var(--font-size-xs);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.lot-risk-preview strong {
+  font-size: 1.15rem;
+}
+
+.lot-form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.lot-form-field {
+  display: grid;
+  align-content: start;
+  gap: 6px;
+}
+
+.lot-form-field.full {
+  grid-column: 1 / -1;
+}
+
+.lot-form-field input:disabled {
+  color: var(--muted);
+  background: var(--surface-alt);
+  cursor: not-allowed;
+}
+
+.lot-field-hint,
+.lot-field-error {
+  font-size: 0.75rem;
+  line-height: 1.35;
+}
+
+.lot-field-hint {
+  color: var(--muted);
+}
+
+.lot-field-error {
+  min-height: 1em;
+  color: #a93a2c;
+  font-weight: 800;
+}
+
+.lot-form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.lot-delete-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 1800;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.lot-delete-backdrop {
+  position: absolute;
+  inset: 0;
+  border: 0;
+  background: rgba(4, 14, 10, 0.72);
+  cursor: pointer;
+}
+
+.lot-delete-dialog {
+  position: relative;
+  z-index: 1;
+  width: min(480px, 100%);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 26px;
+  color: var(--ink);
+  background: var(--white);
+  box-shadow: var(--shadow-strong);
+}
+
+.lot-delete-dialog > span {
+  color: var(--coral);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.lot-delete-dialog h2 {
+  margin: 7px 0 8px;
+  color: var(--forest);
+}
+
+.lot-delete-dialog p {
+  margin: 0 0 20px;
+  color: var(--muted);
+}
+
+.lot-delete-dialog > div {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+:root[data-theme="dark"] .lot-management-message {
+  color: #9cf0c2;
+}
+
+:root[data-theme="dark"] .lot-status,
+:root[data-theme="dark"] .lot-risk-preview {
+  color: #74dfac;
+  background: #17372a;
+}
+
+:root[data-theme="dark"] .lot-status.risk-medio,
+:root[data-theme="dark"] .lot-risk-preview.risk-medio {
+  color: #f4c66f;
+  background: #372b19;
+}
+
+:root[data-theme="dark"] .lot-status.risk-alto,
+:root[data-theme="dark"] .lot-risk-preview.risk-alto {
+  color: #ff9687;
+  background: #3a211e;
+}
+
+@media (max-width: 980px) {
+  .lot-management-stats,
+  .lot-form-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .lot-management-toolbar,
+  .lot-registry-heading,
+  .lot-form-heading {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .lot-management-toolbar .btn-fresh,
+  .lot-management-toolbar .btn-soft,
+  .lot-registry-heading label,
+  .lot-form-actions .btn-fresh,
+  .lot-form-actions .btn-soft {
+    width: 100%;
+  }
+
+  .lot-management-toolbar-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .lot-management-stats,
+  .lot-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lot-form-actions,
+  .lot-delete-dialog > div {
+    flex-direction: column;
+  }
+
+  .lot-risk-preview {
+    min-width: 0;
+  }
+}

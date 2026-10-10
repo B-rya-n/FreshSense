@@ -1,0 +1,213 @@
+export const en = {
+  "FreshSense Risk Lab": "FreshSense Risk Lab",
+  "Simulação de risco clara, rastreável e orientada à ação":
+    "Clear, traceable, action-oriented risk simulation",
+  "Configure o lote, analise a contribuição de cada fator, posicione o cenário em uma matriz de probabilidade e impacto e compare medidas de controle antes de agir.":
+    "Configure the lot, analyze each factor's contribution, position the scenario on a likelihood-impact matrix, and compare control measures before acting.",
+  "Análise detalhada de risco, matriz de probabilidade e impacto, medidas de controle e plano de resposta.":
+    "Detailed risk analysis, likelihood-impact matrix, control measures, and response plan.",
+  "Modelo demonstrativo e explicável.": "Demonstration and explainable model.",
+  "O resultado apoia comparação de cenários, não a liberação ou condenação de alimentos.":
+    "The result supports scenario comparison, not food release or disposal decisions.",
+  "Ver metodologia": "View methodology",
+  "Simulação avançada": "Advanced simulation",
+  "Análise preditiva": "Predictive analysis",
+  "Simulação de risco": "Risk simulation",
+  "Configure um cenário, investigue os fatores críticos e compare medidas de controle antes de uma decisão operacional.":
+    "Configure a scenario, investigate critical factors, and compare control measures before an operational decision.",
+  "Cenários comparáveis": "Comparable scenarios",
+  "Abrir simulador": "Open simulator",
+  "Construa o cenário, avalie e trate o risco":
+    "Build the scenario, assess it, and treat the risk",
+  "O fluxo separa entradas, diagnóstico e resposta. Assim, cada conclusão permanece rastreável e pode ser comparada com medidas de controle antes de uma decisão operacional.":
+    "The flow separates inputs, diagnosis, and response. Each conclusion remains traceable and can be compared with control measures before an operational decision.",
+  "Configuração do cenário": "Scenario configuration",
+  "Dados do lote": "Lot data",
+  "Alterações não analisadas": "Unanalyzed changes",
+  "Cenário analisado": "Scenario analyzed",
+  "Etapas de configuração do risco": "Risk configuration steps",
+  Lote: "Lot",
+  Exposição: "Exposure",
+  Controles: "Controls",
+  "Tipo de alimento": "Food type",
+  "Define o perfil demonstrativo de sensibilidade e referência.":
+    "Defines the demonstration sensitivity and reference profile.",
+  "Etapa da cadeia": "Supply-chain stage",
+  "Contextualiza a exposição operacional do lote.":
+    "Provides context for the lot's operational exposure.",
+  "Peso do lote (kg)": "Lot weight (kg)",
+  "Utilizado para estimar a dimensão do impacto.":
+    "Used to estimate the scale of impact.",
+  "Percentual informado pela operação; não é calculado pelo simulador.":
+    "Percentage supplied by operations; it is not calculated by the simulator.",
+  "Vida útil remanescente:": "Remaining shelf life:",
+  "Referência demonstrativa do perfil:": "Demonstration profile reference:",
+  "Janela demonstrativa do perfil: até": "Demonstration profile window: up to",
+  "horas.": "hours.",
+  "Temperatura observada (°C)": "Observed temperature (°C)",
+  "Umidade observada (%)": "Observed humidity (%)",
+  "Tempo de exposição (h)": "Exposure time (h)",
+  "Atraso adicional (h)": "Additional delay (h)",
+  "Tempo não planejado além da janela operacional.":
+    "Unplanned time beyond the operating window.",
+  "Integridade da embalagem": "Packaging integrity",
+  "Condição visual informada no ponto de controle.":
+    "Visual condition reported at the control point.",
+  "Histórico térmico recente": "Recent thermal history",
+  "Recorrência de desvios observada no mesmo lote.":
+    "Recurrence of deviations observed in the same lot.",
+  "Condição do sensor": "Sensor condition",
+  "Afeta o risco observado e a confiança do diagnóstico.":
+    "Affects observed risk and diagnostic confidence.",
+  "Cobertura dos dados": "Data coverage",
+  "Quanto da janela foi efetivamente observado.":
+    "How much of the time window was actually observed.",
+  "Restaurar cenário": "Reset scenario",
+  Voltar: "Back",
+  Continuar: "Continue",
+  "Executar análise": "Run analysis",
+  "Diagnóstico consolidado": "Consolidated diagnosis",
+  "Aguardando nova análise": "Waiting for a new analysis",
+  "Resultado atualizado": "Result updated",
+  Índice: "Index",
+  "Risco baixo": "Low risk",
+  "Risco moderado": "Moderate risk",
+  "Risco alto": "High risk",
+  "Risco crítico": "Critical risk",
+  Baixo: "Low",
+  Moderado: "Moderate",
+  Alto: "High",
+  Crítico: "Critical",
+  "É o maior componente do cenário analisado. Janela de resposta:":
+    "This is the largest component in the analyzed scenario. Response window:",
+  Probabilidade: "Likelihood",
+  Impacto: "Impact",
+  Confiança: "Confidence",
+  "Qualidade dos dados": "Data quality",
+  "Faixa provável": "Likely range",
+  Margem: "Margin",
+  "Volume potencialmente exposto": "Potentially exposed volume",
+  "Parcela potencialmente evitável": "Potentially avoidable portion",
+  "Estimativas demonstrativas para comparação de cenários — não representam previsão de perda real.":
+    "Demonstration estimates for scenario comparison — they are not forecasts of actual loss.",
+  "Exploração do resultado": "Result exploration",
+  "Entenda o risco antes de agir": "Understand the risk before acting",
+  Diagnóstico: "Diagnosis",
+  "Matriz 5 × 5": "5 × 5 matrix",
+  "Plano de resposta": "Response plan",
+  "Visualizações da análise de risco": "Risk analysis views",
+  "Composição do índice": "Index composition",
+  "Contribuição por fator": "Contribution by factor",
+  "pontos ponderados": "weighted points",
+  "Condições observadas": "Observed conditions",
+  "Leituras e referências": "Readings and references",
+  Temperatura: "Temperature",
+  Umidade: "Humidity",
+  Perfil: "Profile",
+  "Fora da faixa": "Outside range",
+  "Dentro da faixa": "Within range",
+  "Janela do perfil:": "Profile window:",
+  "Acima da janela": "Above window",
+  "Dentro da janela": "Within window",
+  Telemetria: "Telemetry",
+  "Probabilidade × impacto": "Likelihood × impact",
+  "A matriz separa a chance de ocorrer perda da dimensão potencial do impacto. O marcador contém texto e forma para não depender somente da cor.":
+    "The matrix separates the chance of loss from the potential scale of impact. The marker uses text and shape so it does not rely on color alone.",
+  Classificação: "Classification",
+  "Muito baixo": "Very low",
+  "Muito alto": "Very high",
+  Atual: "Current",
+  "Análise contrafactual": "Counterfactual analysis",
+  "Teste medidas de controle": "Test control measures",
+  "Selecione ações para comparar o índice atual com um cenário residual. O cálculo não altera o cenário registrado.":
+    "Select actions to compare the current index with a residual scenario. The calculation does not change the recorded scenario.",
+  "Restabelecer condição térmica": "Restore thermal conditions",
+  "Simula transferência para a faixa central do produto.":
+    "Simulates transfer to the product's central range.",
+  "Reduzir exposição e atraso": "Reduce exposure and delay",
+  "Simula priorização da rota e eliminação do atraso.":
+    "Simulates route prioritization and elimination of delay.",
+  "Restaurar telemetria": "Restore telemetry",
+  "Simula sensor normal e cobertura contínua.":
+    "Simulates a normal sensor and continuous coverage.",
+  "Conter e proteger o lote": "Contain and protect the lot",
+  "Simula embalagem íntegra e interrupção de recorrência.":
+    "Simulates intact packaging and interruption of recurrence.",
+  "Risco atual": "Current risk",
+  "Risco residual": "Residual risk",
+  "Selecione pelo menos uma medida para comparar.":
+    "Select at least one measure to compare.",
+  "Redução simulada:": "Simulated reduction:",
+  pontos: "points",
+  "Sequência recomendada": "Recommended sequence",
+  "Comparação local": "Local comparison",
+  "Histórico desta sessão": "This session's history",
+  "Os cenários ficam apenas no navegador durante esta sessão e podem ser carregados novamente para comparação.":
+    "Scenarios remain only in the browser during this session and can be loaded again for comparison.",
+  "Nenhum cenário foi registrado ainda.": "No scenario has been recorded yet.",
+  "Transparência do modelo": "Model transparency",
+  "Como o índice é construído": "How the index is built",
+  "O simulador usa pesos explícitos e separa condição observada, impacto, incerteza e tratamento. Assim, o usuário consegue entender por que o resultado mudou.":
+    "The simulator uses explicit weights and separates observed conditions, impact, uncertainty, and treatment. This makes it clear why the result changed.",
+  Contextualizar: "Contextualize",
+  "Produto, volume, etapa, vida útil e condições de controle.":
+    "Product, volume, stage, shelf life, and control conditions.",
+  Analisar: "Analyze",
+  "Dez fatores ponderados formam o índice de probabilidade.":
+    "Ten weighted factors form the likelihood index.",
+  Avaliar: "Assess",
+  "Probabilidade e impacto posicionam o cenário na matriz 5 × 5.":
+    "Likelihood and impact position the scenario on the 5 × 5 matrix.",
+  "Tratar e revisar": "Treat and review",
+  "Medidas simuladas mostram risco residual e orientam verificação.":
+    "Simulated measures show residual risk and guide verification.",
+  "Índice final": "Final index",
+  "72% fatores ponderados + 28% matriz normalizada":
+    "72% weighted factors + 28% normalized matrix",
+  "Qualidade do sensor + cobertura temporal": "Sensor quality + time coverage",
+  Incerteza: "Uncertainty",
+  "Margem ampliada quando faltam dados confiáveis":
+    "Wider margin when reliable data is missing",
+  "Volume estimado": "Estimated volume",
+  "Peso × taxa demonstrativa de 3–32%; parcela evitável de 68%":
+    "Weight × demonstration rate of 3–32%; 68% avoidable portion",
+  "Gestão de risco": "Risk management",
+  "Referência para identificar, analisar, avaliar, tratar, monitorar e comunicar riscos.":
+    "Reference for identifying, analyzing, assessing, treating, monitoring, and communicating risks.",
+  "Consultar ISO": "Review ISO",
+  Avaliação: "Assessment",
+  "Base conceitual para comunicar nível de risco pela combinação entre probabilidade e impacto.":
+    "Conceptual basis for communicating risk levels by combining likelihood and impact.",
+  "Consultar NIST": "Review NIST",
+  "Controle preventivo": "Preventive control",
+  "Orientação para monitorar limites, executar ação corretiva, verificar e manter registros.":
+    "Guidance for monitoring limits, performing corrective action, verifying, and maintaining records.",
+  "Consultar FAO": "Review FAO",
+  "Transporte de alimentos": "Food transportation",
+  "Referência para controle de temperatura, embalagem, comunicação e resposta a possíveis falhas durante o transporte.":
+    "Reference for temperature control, packaging, communication, and response to potential failures during transportation.",
+  "Consultar FDA": "Review FDA",
+  "Limite de uso": "Usage limitation",
+  "Esta é uma simulação educacional com perfis e pesos demonstrativos. Não substitui avaliação microbiológica, plano HACCP, legislação aplicável, responsável técnico ou decisão de um profissional qualificado. Um desvio de temperatura pode exigir retenção do produto até avaliação competente.":
+    "This is an educational simulation with demonstration profiles and weights. It does not replace microbiological assessment, a HACCP plan, applicable law, a technical specialist, or a qualified professional's decision. A temperature deviation may require holding the product until a competent assessment is completed.",
+  "Sensibilidade do produto": "Product sensitivity",
+  "Desvio de temperatura": "Temperature deviation",
+  "Desvio de umidade": "Humidity deviation",
+  "Tempo de exposição": "Exposure time",
+  "Atraso logístico": "Logistics delay",
+  "Histórico de desvios": "Deviation history",
+  "Confiabilidade do sensor": "Sensor reliability",
+  "Íntegra e lacrada": "Intact and sealed",
+  "Danos visíveis": "Visible damage",
+  "Aberta ou sem lacre": "Open or unsealed",
+  "Sem desvios anteriores": "No previous deviations",
+  "Um desvio breve": "One brief deviation",
+  "Desvios recorrentes": "Recurring deviations",
+  "Leitura contínua": "Continuous readings",
+  "Leitura intermitente": "Intermittent readings",
+  "Leitura pontual": "Single reading",
+  "Imediata · até 15 min": "Immediate · within 15 min",
+  "Prioritária · até 1 h": "Priority · within 1 h",
+  "Programada · até 4 h": "Scheduled · within 4 h",
+  "Rotina · próxima leitura": "Routine · next reading",
+};

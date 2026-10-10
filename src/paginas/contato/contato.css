@@ -1,0 +1,217 @@
+.contact-hero {
+  --hero-image: url("https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1800&q=80");
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(310px, 0.72fr) minmax(460px, 1.28fr);
+  gap: clamp(24px, 4vw, 42px);
+  align-items: start;
+}
+
+.contact-panel,
+.contact-form {
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.contact-panel::before,
+.contact-form::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 6px;
+  background: linear-gradient(90deg, var(--leaf), var(--blue));
+}
+
+.contact-panel h2,
+.form-head h2 {
+  color: var(--forest);
+}
+
+.contact-panel p,
+.form-head p {
+  color: var(--muted);
+  line-height: 1.68;
+}
+
+.contact-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.contact-list div {
+  position: relative;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px 18px 18px 22px;
+  background:
+    linear-gradient(180deg, rgba(49, 201, 133, 0.08), transparent),
+    var(--surface);
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.contact-list div::before {
+  content: "";
+  position: absolute;
+  inset: 16px auto 16px 0;
+  width: 4px;
+  border-radius: 999px;
+  background: var(--leaf);
+}
+
+.contact-list div:hover {
+  transform: translateX(5px);
+  border-color: rgba(49, 201, 133, 0.44);
+}
+
+.contact-list strong,
+.contact-list span {
+  display: block;
+}
+
+.contact-list strong {
+  color: var(--forest);
+}
+
+.contact-list span {
+  color: var(--muted);
+  margin-top: 3px;
+}
+
+.contact-metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.contact-metrics div {
+  border: 1px solid rgba(49, 201, 133, 0.28);
+  border-radius: var(--radius);
+  padding: 16px;
+  background: linear-gradient(
+    180deg,
+    rgba(49, 201, 133, 0.16),
+    rgba(49, 201, 133, 0.06)
+  );
+}
+
+.contact-metrics span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.contact-metrics strong {
+  display: block;
+  color: var(--forest);
+  margin-top: 6px;
+}
+
+.contact-form {
+  display: grid;
+  gap: 24px;
+  padding: clamp(24px, 4vw, 38px);
+  background:
+    linear-gradient(135deg, rgba(49, 201, 133, 0.08), transparent 44%),
+    var(--white);
+}
+
+.form-head {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 18px;
+}
+
+.contact-form .form-grid {
+  gap: 20px;
+}
+
+.contact-form .form-field {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 15px;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.72),
+      rgba(255, 255, 255, 0.46)
+    ),
+    var(--surface);
+  transition:
+    border-color 0.18s ease,
+    box-shadow 0.18s ease,
+    transform 0.18s ease;
+}
+
+.contact-form .form-field:focus-within {
+  transform: translateY(-1px);
+  border-color: rgba(49, 201, 133, 0.45);
+  box-shadow: 0 0 0 4px rgba(49, 201, 133, 0.12);
+}
+
+.contact-form .form-field input,
+.contact-form .form-field select,
+.contact-form .form-field textarea {
+  background: var(--white);
+}
+
+.contact-form .btn-block,
+.contact-form .status-message {
+  grid-column: 1 / -1;
+}
+
+.contact-form .btn-block {
+  min-height: 56px;
+  margin-top: 2px;
+  box-shadow: 0 18px 40px rgba(49, 201, 133, 0.22);
+}
+
+.contact-form textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+.field-counter.limit-warning {
+  color: #9c3327;
+  font-weight: 900;
+}
+
+@media (max-width: 920px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-panel {
+    order: 2;
+  }
+}
+
+@media (max-width: 560px) {
+  .contact-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+
+  .contact-form .form-field {
+    padding: 12px;
+  }
+
+  .contact-form .btn-block {
+    min-height: 54px;
+  }
+}
+
+:root[data-theme="dark"] .contact-list div,
+:root[data-theme="dark"] .contact-form .form-field {
+  background: #10261e;
+}

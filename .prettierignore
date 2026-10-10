@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.vite-cache/
+.npm-cache/
+coverage/
+tmp/
+diagramas/*.drawio
+diagramas/*.html
+diagramas/*.svg

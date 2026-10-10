@@ -1,0 +1,42 @@
+{
+  "name": "freshsense-react-fase6",
+  "private": true,
+  "version": "6.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --configLoader runner",
+    "build": "vite build --configLoader runner",
+    "preview": "vite preview --configLoader runner",
+    "lint": "eslint . --max-warnings 0",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test:unit": "node --test",
+    "test:ui": "vitest run",
+    "test": "npm run test:unit && npm run test:ui",
+    "uml:generate": "node scripts/generate-core-uml.mjs && node scripts/export-uml-png.mjs && node scripts/build-uml-pdf.mjs",
+    "check": "npm run lint && npm run format:check && npm test && npm run build"
+  },
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.4",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.6",
+    "@vitejs/plugin-react": "^6.1.0",
+    "eslint": "^10.9.1",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.5",
+    "globals": "^17.11.0",
+    "jsdom": "^30.0.1",
+    "postcss": "^8.5.26",
+    "prettier": "^3.9.6",
+    "vite": "^8.2.2",
+    "vitest": "^4.1.11"
+  }
+}
