@@ -42,7 +42,7 @@ export function HomeHero() {
               </a>
               <a
                 className="btn-outline home-pitch-link"
-                href="https://youtu.be/HaJsiKlaZM0"
+                href="https://youtu.be/He1Jl7nJ-kc"
                 target="_blank"
                 rel="noreferrer"
               >
